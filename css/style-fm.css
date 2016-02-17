@@ -1,0 +1,7 @@
+.fm-row, .fm-back {
+    font-size: 10pt;
+}
+.fm-item {
+    width: 150px;
+    display: inline-block;
+}

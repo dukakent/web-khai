@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE list [
+<!ELEMENT list (product+)>
+<!ELEMENT product (brand,model,year,price,serial,imgurl)>
+<!ELEMENT brand (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT serial (#PCDATA)>
+<!ELEMENT imgurl (#PCDATA)>
+]>
+<list>
+<product>
+    <brand>BMW</brand>
+    <model>M Sport</model>
+    <year>2014</year>
+    <price>$74000</price>
+    <serial>1234</serial>
+    <imgurl>http://liveimages.carsales.com.au/carsales/car/dealer/204059663.jpg</imgurl>
+</product>
+<product>
+    <brand>Volkswagen</brand>
+    <model>Jetta</model>
+    <year>2012</year>
+    <price>$19500</price>
+    <serial>5678</serial>
+    <imgurl>http://liveimages.carsales.com.au/carsales/car/private/cp4693993657014224354.jpg</imgurl>
+</product>
+<product>
+    <brand>Ford</brand>
+    <model>Ranger XLT</model>
+    <year>2015</year>
+    <price>$55000</price>
+    <serial>9012</serial>
+    <imgurl>http://liveimages.carsales.com.au/carsales/car/dealer/cd4722017661875050165.jpg</imgurl>
+</product>
+<product>
+    <brand>Honda</brand>
+    <model>Accord</model>
+    <year>2013</year>
+    <price>$22500</price>
+    <serial>3456</serial>
+    <imgurl>http://liveimages.carsales.com.au/carsales/car/private/cp4850773853544267975.jpg</imgurl>
+</product>
+<product>
+    <brand>Ford</brand>
+    <model>Falcon XR6</model>
+    <year>2010</year>
+    <price>$20000</price>
+    <serial>7890</serial>
+    <imgurl>http://liveimages.carsales.com.au/carsales/car/dealer/cd5023410283170782486.jpg</imgurl>
+</product>
+<product>
+    <brand>Mazda</brand>
+    <model>CX-9</model>
+    <year>2015</year>
+    <price>$57000</price>
+    <serial>0987</serial>
+    <imgurl>http://liveimages.carsales.com.au/carsales/car/cil/4946316.jpg</imgurl>
+</product>
+<product>
+    <brand>Jeep</brand>
+    <model>Renegade</model>
+    <year>2015</year>
+    <price>$45000</price>
+    <serial>6543</serial>
+    <imgurl>http://liveimages.carsales.com.au/carsales/car/dealer/cd5544531297961810562.jpg</imgurl>
+</product>
+<product>
+    <brand>Kia</brand>
+    <model>Rio S</model>
+    <year>2015</year>
+    <price>$16000</price>
+    <serial>2109</serial>
+    <imgurl>http://liveimages.carsales.com.au/carsales/car/dealer/196169255.jpg</imgurl>
+</product>
+<product>
+    <brand>Volkswagen</brand>
+    <model>Amarok</model>
+    <year>2015</year>
+    <price>$43000</price>
+    <serial>8765</serial>
+    <imgurl>http://liveimages.carsales.com.au/carsales/car/dealer/198114761.jpg</imgurl>
+</product>
+<product>
+    <brand>Nissan</brand>
+    <model>Pathfinder</model>
+    <year>2015</year>
+    <price>$38500</price>
+    <serial>4321</serial>
+    <imgurl>http://liveimages.carsales.com.au/carsales/car/cil/cc5314633744154060446.jpg</imgurl>
+</product>
+</list>

@@ -1,0 +1,310 @@
+@font-face {
+    font-family: 'lab2_fonts';
+    src: url('../fonts/hooge_05_55_Cyr2.ttf');
+}
+
+BODY {
+    margin: 0px;
+    width: 100%;
+}
+
+.hooge-font {
+    font-family: lab2_fonts;
+    font-size: 12px;
+}
+
+.verdana-font {
+    font-family: Verdana;
+    font-size: 7pt;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bubbles {
+    height: 180px;
+    overflow: hidden;
+    background-color: #465e7a;
+}
+.header-left {
+    background: url("../img/header.jpg") no-repeat;
+    width: 600px;
+    height: 180px;
+    float: left;
+}
+.header-right {
+    position: relative;
+    background: url("../img/header-right.jpg");
+    float: right;
+    width: 200px;
+    height: 180px;
+    margin: 0px;
+}
+
+.logo {
+    margin: 0px 25px 0px 50px;
+    position: relative;
+    float: left;
+}
+
+.just-use {
+    font-family: Arial;
+    font-size: 24pt;
+    color: #fff;
+    position: relative;
+}
+
+.hosting {
+    margin: 40px 0px 0px 10px;
+    float: left;
+    position: relative;
+}
+
+.border-both {
+    height: 14px;
+    background: url("../img/custom_border.png") repeat-x;
+    margin-top: 3px;
+}
+
+.border-squares {
+    height: 4px;
+    background: url("../img/custom_border.png") repeat-x;
+    margin: 3px 0px 3px 0px;
+}
+
+.border-vdots {
+    height: 6px;
+    background: url("../img/custom_border.png") repeat-x;
+    background-position-y: -8px;
+}
+
+/*menu*/
+.menu {
+    margin-top: 3px;
+    height: 22px;
+}
+
+.menu-strip, .menu-button, .menu-arrow {
+    height: 100%;
+    background: #8095a8;
+    border: 1px #2d4758 solid;
+    border-radius: 1px;
+    height: 17px;
+}
+
+.menu-strip {
+    float: left;
+    color: #c3d8f5;
+    border-left: 0px;
+    border-radius: 0px 1px 1px 0px;
+    width: calc(100% - 279px);
+}
+
+.menu-strip div {
+    float: left;
+    margin-left: 7px;
+}
+
+.nav {
+    margin-top: 2px;
+}
+
+.menu-button {
+    float: right;
+    color: #fff;
+    padding: 0px 5px 0px 5px;
+    margin-right: 1px;
+    vertical-align: middle;
+}
+
+.menu-button div {
+    margin-top: 2px;
+}
+
+.menu-arrow {
+    border-right: 0px;
+    border-radius: 1px 0px 0px 1px;
+    float: right;
+    padding: 0px 2px 0px 2px;
+}
+
+.menu-arrow img {
+    margin-top: 3px;
+}
+
+/*container*/
+
+.container {
+    margin-top: 5px;
+}
+
+.sidebar {
+    float: left;
+    width: 299px;
+
+}
+
+.auth {
+    margin: 0px 14px 10px 8px;
+}
+
+.block-header {
+    color: #fff;
+    width: 100%;
+    height: 19px;
+    background: #fca02a;
+    border-radius: 1px;
+}
+
+.block-header div {
+    float: left;
+    padding-left: 7px;
+    padding-top: 3px;
+}
+
+.block-header img {
+    padding-right: 7px;
+    padding-top: 2px;
+    float: right;
+}
+
+.form-login {
+    margin: 9px 0px 0px 6px;
+}
+
+.form-login .submit {
+    margin-top: 6px;
+    width: 100%;
+}
+
+.form-login .submit input {
+    float: right;
+    margin-right: 3px;
+}
+
+.field {
+    margin-left: 10px;
+    height: 20px;
+}
+
+.field-login {
+    margin-top: 13px;
+}
+
+.field-password {
+    margin-top: 10px;
+}
+
+.field .label {
+    margin-top: 2px;
+    font-size: 8pt;
+    float: left;
+}
+.field .value {
+    background: #c2d2ea;
+    border: 1px #2d4758 solid;
+    height: 17px;
+    width: 150px;
+    float: right;
+}
+
+.forgot-password {
+    margin-top: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.forgot-password a {
+    color: #000;
+}
+
+.message {
+    padding: 10px;
+    color: #fff;
+    background: #fca02a;
+    border: 2px #2f4857 solid;
+    border-radius: 10px;
+}
+
+.message a {
+    text-align: center;
+    color: #2d4758;
+    text-decoration: underline;
+}
+
+.message-one {
+    margin-top: 20px;
+}
+
+.message-two {
+    margin-top: 15px;
+}
+
+.main {
+    float: right;
+    width: calc(100% - 300px);
+    border-left: 1px #b6c5dd solid;
+
+}
+
+.info  {
+    padding: 0px 4px 0px 14px;
+}
+
+.database {
+    margin-top: 8px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.redirect {
+    padding: 100px 0px 200px 0px;
+    font-size: 18pt;
+    color:  darkslateblue;
+}
+
+.database img {
+    float: right;
+    margin: 0px 0px 2px 2px;
+}
+
+.news {
+    border-top: 1px #b6c5dd solid;
+    border-bottom: 1px #b6c5dd solid;;
+    padding: 7px 0px 7px 10px;
+    font-size: 8pt;
+    clear: both;
+}
+
+.news span {
+    margin-top: 10px;
+    float: right;
+    width: calc(100% - 180px);
+    letter-spacing: 1px;
+}
+
+
+
+.footer {
+    font-size: 9pt;
+    color: #fff;
+    background: #8095a8;
+    border-top: 1px #2d4758 solid;
+    border-bottom: 1px #2d4758 solid;
+    height: 17px;
+    padding-left: 5px;
+}
+
+.var {
+    font-size: 12px;
+}
+
+.var-row div {
+    display:inline-block;
+    width: 300px;
+}
+
+.fm-upload {
+    padding: 20px 0px 20px 0px;
+}

@@ -1,0 +1,16 @@
+.car-product {
+    border-bottom: 1px #b6c5dd solid;
+    font-size: 10pt;
+    margin: 20px;
+    width: 600px;
+}
+
+
+
+.car-product img {
+    width: 300px;
+}
+
+.right {
+    float: right;
+}
