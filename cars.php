@@ -6,7 +6,7 @@ $parser = xml_parser_create();
 
 xml_parser_set_option($parser, XML_OPTION_SKIP_WHITE, 0);
 xml_parser_set_option($parser, XML_OPTION_CASE_FOLDING, 0);
-xml_parser_set_option($parser, XML_OPTION_TARGET_ENCODING, "URF-8");
+//xml_parser_set_option($parser, XML_OPTION_TARGET_ENCODING, "URF-8");
 
 function start_element ($parser, $name, $attrs) {
     if($name == "product") {

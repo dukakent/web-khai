@@ -1,5 +1,5 @@
 <?php 
-    $url = 'http://localhost/web/';
+    $url = 'http://localhost/web-khai/';
 
     function post($name){
         if(isset($_POST[$name])){
