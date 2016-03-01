@@ -8,6 +8,18 @@ BODY {
     width: 100%;
 }
 
+.clear {
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
 .hooge-font {
     font-family: lab2_fonts;
     font-size: 12px;

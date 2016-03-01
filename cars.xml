@@ -11,9 +11,8 @@
 ]>
 <list>
 <product id="1" available="true">
-
     <brand>BMW</brand>
-    <model>M Sport<"</model>
+    <model>M Sport</model>
     <year>2014</year>
     <price cur="dollar">74000</price>
     <serial>1234</serial>
