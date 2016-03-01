@@ -10,83 +10,84 @@
 <!ELEMENT imgurl (#PCDATA)>
 ]>
 <list>
-<product>
+<product id="1" available="true">
+
     <brand>BMW</brand>
-    <model>M Sport</model>
+    <model>M Sport<"</model>
     <year>2014</year>
-    <price>$74000</price>
+    <price cur="dollar">74000</price>
     <serial>1234</serial>
     <imgurl>http://liveimages.carsales.com.au/carsales/car/dealer/204059663.jpg</imgurl>
 </product>
-<product>
+<product id="2" available="true">
     <brand>Volkswagen</brand>
     <model>Jetta</model>
     <year>2012</year>
-    <price>$19500</price>
+    <price cur="euro">19500</price>
     <serial>5678</serial>
     <imgurl>http://liveimages.carsales.com.au/carsales/car/private/cp4693993657014224354.jpg</imgurl>
 </product>
-<product>
+<product id="3" available="true">
     <brand>Ford</brand>
-    <model>Ranger XLT</model>
+    <model>Ranger XLT </model>
     <year>2015</year>
-    <price>$55000</price>
+    <price cur="uah">55000</price>
     <serial>9012</serial>
     <imgurl>http://liveimages.carsales.com.au/carsales/car/dealer/cd4722017661875050165.jpg</imgurl>
 </product>
-<product>
+<product id="4" available="true">
     <brand>Honda</brand>
     <model>Accord</model>
     <year>2013</year>
-    <price>$22500</price>
+    <price cur="dollar">22500</price>
     <serial>3456</serial>
     <imgurl>http://liveimages.carsales.com.au/carsales/car/private/cp4850773853544267975.jpg</imgurl>
 </product>
-<product>
+<product id="5" available="true">
     <brand>Ford</brand>
     <model>Falcon XR6</model>
     <year>2010</year>
-    <price>$20000</price>
+    <price cur="dollar">20000</price>
     <serial>7890</serial>
     <imgurl>http://liveimages.carsales.com.au/carsales/car/dealer/cd5023410283170782486.jpg</imgurl>
 </product>
-<product>
+<product id="6" available="true">
     <brand>Mazda</brand>
     <model>CX-9</model>
     <year>2015</year>
-    <price>$57000</price>
+    <price cur="dollar">57000</price>
     <serial>0987</serial>
     <imgurl>http://liveimages.carsales.com.au/carsales/car/cil/4946316.jpg</imgurl>
 </product>
-<product>
+<product id="7" available="true">
     <brand>Jeep</brand>
     <model>Renegade</model>
     <year>2015</year>
-    <price>$45000</price>
+    <price cur="dollar">45000</price>
     <serial>6543</serial>
     <imgurl>http://liveimages.carsales.com.au/carsales/car/dealer/cd5544531297961810562.jpg</imgurl>
 </product>
-<product>
+<product id="8" available="true">
     <brand>Kia</brand>
     <model>Rio S</model>
     <year>2015</year>
-    <price>$16000</price>
+    <price cur="dollar">16000</price>
     <serial>2109</serial>
     <imgurl>http://liveimages.carsales.com.au/carsales/car/dealer/196169255.jpg</imgurl>
 </product>
-<product>
+<product id="9" available="true">
     <brand>Volkswagen</brand>
     <model>Amarok</model>
     <year>2015</year>
-    <price>$43000</price>
+    <price cur="dollar">43000</price>
     <serial>8765</serial>
     <imgurl>http://liveimages.carsales.com.au/carsales/car/dealer/198114761.jpg</imgurl>
 </product>
-<product>
+<product id="10" available="true">
     <brand>Nissan</brand>
     <model>Pathfinder</model>
     <year>2015</year>
-    <price>$38500</price>
+    <price cur="dollar">38500</price>
     <serial>4321</serial>
     <imgurl>http://liveimages.carsales.com.au/carsales/car/cil/cc5314633744154060446.jpg</imgurl>
 </product>

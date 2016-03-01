@@ -10,10 +10,11 @@ xml_parser_set_option($parser, XML_OPTION_CASE_FOLDING, 0);
 
 function start_element ($parser, $name, $attrs) {
     if($name == "product") {
-        echo "<div class=\"car-product\">";
+        echo "<div class=\"car-product\">
+        <div class=\"right\"><b>ID: </b>".$attrs["id"];
     }
     if($name == "brand") {
-        echo "<div class=\"right\"><div><b>Бренд:</b> ";
+        echo "<div><b>Бренд:</b> ";
     }
     if($name == "model") {
         echo "<div><b>Модель:</b> ";
@@ -23,6 +24,15 @@ function start_element ($parser, $name, $attrs) {
     }
     if($name == "price") {
         echo "<div><b>Стоимость:</b> ";
+        if ($attrs["cur"] == "dollar") {
+            echo "&dollar; ";
+        }
+        if ($attrs["cur"] == "euro") {
+            echo "&euro; ";
+        }
+        if ($attrs["cur"] == "uah") {
+            echo "UAH ";
+        }
     }
     if($name == "serial") {
         echo "<div><b>Серийный номер:</b> ";
@@ -36,7 +46,7 @@ function end_element ($parser, $name) {
     if($name == "imgurl") {
         echo "\">";
     }
-    else  if($name == "serial") {
+    else if($name == "serial") {
         echo "</div></div>";
     }
     else {
