@@ -5,7 +5,7 @@ include('template/sidebar.php');
 
 
 
-function print_main_content() {
+function less_info() {
     $xml = simplexml_load_file('cars.xml');
     $res = "";
 
@@ -16,10 +16,10 @@ function print_main_content() {
         if ($prod["available"] == "true") {
             $res .= "<div class=\"car-product\">";
             $res .= "<img class=\"car-img left\" alt=\"Car\" src=\"".$prod->imgurl."\">";
-            $res .= "<div><b>ID: </b>".$prod["id"]."</div>";
+            //$res .= "<div><b>ID: </b>".$prod["id"]."</div>";
             $res .= "<div><b>Brand: </b>".$prod->brand."</div>";
             $res .= "<div><b>Model: </b>".$prod->model."</div>";
-            $res .= "<div><b>Year: </b>".$prod->year."</div>";
+            //$res .= "<div><b>Year: </b>".$prod->year."</div>";
             if ($prod->price["cur"] == "dollar") {
                 $cur = "&dollar;";
             }
@@ -29,8 +29,8 @@ function print_main_content() {
             else if ($prod->price["cur"] == "uah") {
                 $cur = "UAH";
             }
-            $res .= "<div><b>Price: </b>".$cur.$prod->price."</div>";
-            $res .= "<div><b>Serial: </b>".$prod->serial."</div>";
+            //$res .= "<div><b>Price: </b>".$cur.$prod->price."</div>";
+            //$res .= "<div><b>Serial: </b>".$prod->serial."</div>";
             $res .= "<div class=\"clear\"></div></div>";
         }
     }
@@ -46,7 +46,7 @@ if (get("act") != "addinfo") {
                 <img src="<?=$url;?>img/block_arrow.png" alt="">
             </div>
                 <?php
-                    echo print_main_content();
+                    echo less_info();
                 ?>
             </div>
         </div>
