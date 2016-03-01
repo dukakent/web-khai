@@ -2,12 +2,13 @@
     border-bottom: 1px #b6c5dd solid;
     font-size: 10pt;
     padding: 20px;
-    width: 600px;
+    overflow: hidden;
 }
 
-
+.car-product > .right {
+    width: 200px;
+}
 
 .car-product img {
-    width: 300px;
-    padding-right: 100px;
+    max-width: 200px;
 }

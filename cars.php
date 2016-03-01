@@ -16,6 +16,7 @@ function print_main_content() {
         if ($prod["available"] == "true") {
             $res .= "<div class=\"car-product\">";
             $res .= "<img class=\"car-img left\" alt=\"Car\" src=\"".$prod->imgurl."\">";
+            $res .= "<div class=\"right\">";
             $res .= "<div><b>ID: </b>".$prod["id"]."</div>";
             $res .= "<div><b>Brand: </b>".$prod->brand."</div>";
             $res .= "<div><b>Model: </b>".$prod->model."</div>";
@@ -31,7 +32,7 @@ function print_main_content() {
             }
             $res .= "<div><b>Price: </b>".$cur.$prod->price."</div>";
             $res .= "<div><b>Serial: </b>".$prod->serial."</div>";
-            $res .= "<div class=\"clear\"></div></div>";
+            $res .= "</div><div class=\"clear\"></div></div>";
         }
     }
     return $res;           
