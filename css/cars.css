@@ -12,3 +12,21 @@
 .car-product img {
     max-width: 200px;
 }
+
+.btn-more {
+    color: blue;
+    cursor: pointer;
+}
+
+.btn-more:hover {
+    text-decoration: underline;
+}
+
+.toolkit {
+    position: absolute;
+    padding: 20px;
+    background: #FFFCCC;
+    border: 1px #cccccc  solid;
+    text-transform: capitalize;
+    font-size: 14px;
+}

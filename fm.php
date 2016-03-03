@@ -1,20 +1,20 @@
 <?php
+include('misc/common.php');    
+include('template/header.php');
+include('template/sidebar.php');
 
-    include('template/header.php');
-    include('template/sidebar.php');
+$error = '';
+$reldir = urldecode($_GET['dir']);
+$reldir = str_replace('../', '', $reldir);
+$get_url = ($reldir == '') ? 'fm.php' : 'fm.php?dir='.urlencode($reldir);
+$curdir = __DIR__.$reldir;
+$root = opendir($curdir);
 
-    $error = '';
-    $reldir = urldecode($_GET['dir']);
-    $reldir = str_replace('../', '', $reldir);
-    $get_url = ($reldir == '') ? 'fm.php' : 'fm.php?dir='.urlencode($reldir);
-    $curdir = __DIR__.$reldir;
-    $root = opendir($curdir);
-
-    function human_filesize($bytes, $decimals = 2) {
-        $sz = 'BKMGTP';
-        $factor = floor((strlen($bytes) - 1) / 3);
-        return sprintf("%.{$decimals}f", $bytes / pow(1024, $factor)) . @$sz[$factor];
-    }
+function human_filesize($bytes, $decimals = 2) {
+    $sz = 'BKMGTP';
+    $factor = floor((strlen($bytes) - 1) / 3);
+    return sprintf("%.{$decimals}f", $bytes / pow(1024, $factor)) . @$sz[$factor];
+}
 
 function my_sort(&$array, $key) {
 
