@@ -62,10 +62,10 @@ if(!$success) {
     <form id="registration-form" action="" method="post" onsubmit="return checkSubmit()">
         <div class="left">
             <div class="reg-el"><input type="hidden" name="act" value="registration"></div>
-            <div class="reg-el"><input class="value" type="text" name="login" placeholder="Введите логин" size="30" value="<?=$login;?>"><span class="error"><?=$errors[0];?></span></div>
-            <div class="reg-el"><input class="value" type="password" name="password" placeholder="Введите пароль" size="30"><span class="error"><?=$errors[1];?></span></div>
-            <div class="reg-el"><input class="value" type="password" name="confirm-password" placeholder="One more time" size="30"><span class="error"><?=$errors[2];?></span></div>
-            <div class="reg-el"><textarea class="value" name="about" id="about" cols="30" rows="10" placeholder="Расскажите о себе"><?=$about;?></textarea><span class="error"></span></div>
+            <div class="reg-el"><input class="value registration-login" type="text" name="login" placeholder="Введите логин" size="30" value="<?=$login;?>"><span class="registration-error"><?=$errors[0];?></span></div>
+            <div class="reg-el"><input class="value registration-password" type="password" name="password" placeholder="Введите пароль" size="30"><span class="registration-error"><?=$errors[1];?></span></div>
+            <div class="reg-el"><input class="value registration-confirm-password" type="password" name="confirm-password" placeholder="One more time" size="30"><span class="registration-error"><?=$errors[2];?></span></div>
+            <div class="reg-el"><textarea class="value registration-about" name="about" id="about" cols="30" rows="10" placeholder="Расскажите о себе"><?=$about;?></textarea><span class="registration-error"></span></div>
         </div>
         <div class="registration-subblock left">
             <div class="left">

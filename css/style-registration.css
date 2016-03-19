@@ -4,7 +4,7 @@
     padding: 10px;
 }
 
-.registration span.error {
+.registration span.registration-error {
     padding: 0px 5px 0px 5px;
     color: crimson;
     font-size: 8pt;
