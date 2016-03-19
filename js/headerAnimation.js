@@ -1,30 +1,6 @@
-function delta (progress) {
-    return progress;
-}
+// script for performing animation
 
-
-function animate (element, way, from, to, duration) {
-    var start = new Date().getTime();
-    setTimeout(function () {
-        var now = (new Date().getTime()) - start;
-        var progress = now / duration;
-        var result = (to - from) * delta(progress) + from;
-        element.style[way] = result + "px";
-        if (progress < 1) setTimeout(arguments.callee, 40);
-    }, 40);
-}
-
-
-window.onload = function () {
-
-    setTimeout(function(){
-        var logo = document.getElementsByClassName("logo")[0];
-        var headerRight = document.getElementsByClassName("header-right")[0];
-        var justUse = document.getElementsByClassName("just-use")[0];
-        var hosting = document.getElementsByClassName("hosting")[0];
-        animate(logo, "left", -255, 0, 1000);
-        animate(headerRight, "right", -200, 0, 1000);
-        animate(hosting, "top", -120, 0, 1000);
-        animate(justUse, "top", -120, 0, 1000);
-    }, 2000);
-};
+$(".logo").animate({ left: "+=255" }, 1000);
+$(".header-right").animate({ right: "+=200" }, 1000);
+$(".just-use").animate({ top: "+=120" }, 1000);
+$(".hosting").animate({ top: "+=120" }, 1000);
