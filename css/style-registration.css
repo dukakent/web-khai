@@ -1,19 +1,30 @@
 
 
-.registration > form > div {
-    padding: 10px 0px 10px 0px;
-}
-.registration > form > div > button {
+.registration .reg-el {
     padding: 10px;
-    width: 243px;
 }
+
 .registration span.error {
     padding: 0px 5px 0px 5px;
     color: crimson;
     font-size: 8pt;
 }
 
+.registration .registration-subblock {
+    padding: 50px 0px 0px 50px;
+}
+
+.registration .lnkbtn {
+    display: inline-block;
+    padding: 10px;
+}
+
 #registration-form .value {
     background: #c2d2ea;
     border: 1px #2d4758 solid;
+}
+
+.registration > form > div > button {
+    padding: 10px;
+    width: 243px;
 }
