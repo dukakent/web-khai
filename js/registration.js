@@ -2,6 +2,7 @@ var login = $(".registration-login");
 var password = $(".registration-password");
 var confirmPassword = $(".registration-confirm-password");
 
+
 function checkSubmit() {
     if(
     checkLogin() &&
@@ -58,3 +59,18 @@ function checkConfirmPassword () {
 login.blur(checkLogin);
 password.blur(checkPassword);
 confirmPassword.blur(checkConfirmPassword);
+
+$(".registration-option-selall").click(function () {
+    $(".registration-option").prop("checked", true);
+    console.log("selall");
+});
+
+$(".registration-option-deselall").click(function () {
+    $(".registration-option").prop("checked", false);
+});
+
+$(".registration-option-invert").click(function () {
+    var checked = $(".registration-option:checked");
+    $(".registration-option").prop("checked", true);
+    checked.prop("checked", false);
+});
