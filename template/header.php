@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>HOSTING.COM</title>
+    <link rel="stylesheet" href="<?=$url;?>css/droppy.css">
     <link rel="stylesheet" href="<?=$url;?>css/style.css">
     <link rel="stylesheet" href="<?=$url;?>css/style-registration.css">
     <link rel="stylesheet" href="<?=$url;?>css/style-fm.css">
