@@ -24,18 +24,21 @@
             </div>
             <div class="header-right" style="right: -200px"></div>
         </div>
-
         <div class="border-both"></div>
         <div class="menu hooge-font">
-            <div class="menu-strip">
-                <div class="nav">navigation</div>
-                <div><img src="<?=$url;?>img/nav_decor.png" alt="decoration"></div>
+            <div class="menu-strip left">
+                <div class="nav-title left">navigation</div>
+                <div class="left"><img src="<?=$url;?>img/nav_decor.png" alt="decoration"></div>
+                <div class="clear"></div>
             </div>
-            <a href="#" class="menu-arrow"><img src="<?php echo $url ?>img/menu_arrow.png" alt="more categories"></a>
-            <a href="<?=$url;?>redirect.php" class="menu-button"><div>contact</div></a>
-            <a href="#" class="menu-button"><div>support</div></a>
-            <a href="#" class="menu-button"><div>services</div></a>
-            <a href="#" class="menu-button"><div>hosting</div></a>
+            <div class="right">
+                <a href="<?=$url;?>redirect.php" class="menu-button">contacts</a>
+                <a href="#" class="menu-button">support</a>
+                <a href="#" class="menu-button">services</a>
+                <a href="#" class="menu-button">hosting</a>
+                <a href="#" class="menu-arrow"><img src="<?=$url;?>img/menu_arrow.png" alt="more categories"></a>
+            </div>
+            <div class="clear"></div>
         </div>
         <div class="border-vdots"></div>
     </div>
