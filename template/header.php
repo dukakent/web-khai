@@ -32,11 +32,26 @@
                 <div class="clear"></div>
             </div>
             <div class="right">
-                <a href="<?=$url;?>redirect.php" class="menu-button">contacts</a>
-                <a href="#" class="menu-button">support</a>
-                <a href="#" class="menu-button">services</a>
-                <a href="#" class="menu-button">hosting</a>
-                <a href="#" class="menu-arrow"><img src="<?=$url;?>img/menu_arrow.png" alt="more categories"></a>
+                <ul class="nav-drop">
+
+                    <li>
+                        <a href="<?=$url;?>redirect.php" class="menu-button">contacts</a>
+                        <ul>
+                            <li><a href="#">Mobile number</a></li>
+                            <li><a href="#">Office number</a></li>
+                            <li><a href="#">Office address</a></li>
+                            <li><a href="#">Support email</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu-button">support</a></li>
+                    <li><a href="#" class="menu-button">services</a></li>
+                    <li><a href="#" class="menu-button">hosting</a></li>
+                    <li>
+                        <a href="#" class="menu-arrow"><img src="<?=$url;?>img/menu_arrow.png" alt="more categories"></a>
+                        
+                    </li>
+                    
+                </ul>
             </div>
             <div class="clear"></div>
         </div>

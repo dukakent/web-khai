@@ -1,3 +1,3 @@
 //
 
-$(".nav-arrow").droppy();
+$(".nav-drop").droppy();
