@@ -34,6 +34,14 @@ a {
     text-decoration: none;
 }
 
+.lnkbtn {
+    cursor: pointer;
+}
+
+.lnkbtn:hover {
+    text-decoration: underline;
+}
+
 .bubbles {
     height: 180px;
     overflow: hidden;
