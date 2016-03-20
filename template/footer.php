@@ -31,6 +31,8 @@
 &copy; Copyright 2002 WEBHOSTING Corporation. All Rights Reserved.
 </div>
 <script src="<?=$url;?>js/common/jquery.js"></script>
+<script src="<?=$url;?>js/common/droppy.js"></script>
+<script src="<?=$url;?>js/navDrop.js"></script>
 <script src="<?=$url;?>js/headerAnimation.js"></script>
 <script src="<?=$url;?>js/registration.js"></script>
 <script src="<?=$url;?>js/ajax.js"></script>
