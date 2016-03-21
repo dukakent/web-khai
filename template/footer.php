@@ -34,7 +34,7 @@
 <script src="<?=$url;?>js/common/droppy.js"></script>
 <script src="<?=$url;?>js/navDrop.js"></script>
 <script src="<?=$url;?>js/headerAnimation.js"></script>
-<!--<script src="./js/registration.js"></script>-->
+<script src="<?=$url;?>js/registration.js"></script>
 <script src="<?=$url;?>js/ajax.js"></script>
 <script src="<?=$url;?>js/carsMoreInfo.js"></script>
 </body>
