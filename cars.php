@@ -1,44 +1,49 @@
 <?php
-
-include('template/header.php');
-include('template/sidebar.php');
+include('misc/common.php');
 
 
 
-function print_main_content() {
+
+function less_info() {
     $xml = simplexml_load_file('cars.xml');
     $res = "";
 
     //echo "<pre>";
     //print_r($xml);
     //echo "</pre>";
+
     foreach ($xml->product as $prod) {
         if ($prod["available"] == "true") {
             $res .= "<div class=\"car-product\">";
             $res .= "<img class=\"car-img left\" alt=\"Car\" src=\"".$prod->imgurl."\">";
             $res .= "<div class=\"right\">";
-            $res .= "<div><b>ID: </b>".$prod["id"]."</div>";
+            //$res .= "<div><b>ID: </b>".$prod["id"]."</div>";
             $res .= "<div><b>Brand: </b>".$prod->brand."</div>";
             $res .= "<div><b>Model: </b>".$prod->model."</div>";
-            $res .= "<div><b>Year: </b>".$prod->year."</div>";
-            if ($prod->price["cur"] == "dollar") {
-                $cur = "&dollar;";
-            }
-            else if ($prod->price["cur"] == "euro") {
-                $cur = "&euro;";
-            }
-            else if ($prod->price["cur"] == "uah") {
-                $cur = "UAH";
-            }
-            $res .= "<div><b>Price: </b>".$cur.$prod->price."</div>";
-            $res .= "<div><b>Serial: </b>".$prod->serial."</div>";
+            $res .= "";
+            //$res .= "<div><b>Year: </b>".$prod->year."</div>";
+            // if ($prod->price["cur"] == "dollar") {
+            //     $cur = "&dollar;";
+            // }
+            // else if ($prod->price["cur"] == "euro") {
+            //     $cur = "&euro;";
+            // }
+            // else if ($prod->price["cur"] == "uah") {
+            //     $cur = "UAH";
+            // }
+            //$res .= "<div><b>Price: </b>".$cur.$prod->price."</div>";
+            //$res .= "<div><b>Serial: </b>".$prod->serial."</div>";
+            
+            $res .= "<div id=\"btn-more-".$prod["id"]."\" class=\"btn-more\">Show more</div>";
             $res .= "</div><div class=\"clear\"></div></div>";
         }
     }
     return $res;           
 }
 
-if (get("act") != "addinfo") {
+if (count($_GET) == 0) {
+    include('template/header.php');
+    include('template/sidebar.php');
     ?>
     <div class="main">
         <div class="info">
@@ -47,16 +52,35 @@ if (get("act") != "addinfo") {
                 <img src="<?=$url;?>img/block_arrow.png" alt="">
             </div>
                 <?php
-                    echo print_main_content();
+                    echo less_info();
                 ?>
             </div>
         </div>
-    </div>
     <?php
+    include('template/footer.php');
 }
 
-else {
-
+else if ((get("act") == "addinfo") && (get("id") != "")) {
+    $id = get("id");
+    $xml = simplexml_load_file('cars.xml');
+    $res = $xml->xpath("product[@id=".$id."]")[0];
+    $res->id = $res["id"][0];
+    unset($res["id"]);
+    unset($res["available"]);
+    unset($res->imgurl);
+    if ($res->price["cur"] == "dollar") {
+        $cur = "&dollar;";
+    }
+    else if ($res->price["cur"] == "euro") {
+        $cur = "&euro;";
+    }
+    else if ($res->price["cur"] == "uah") {
+        $cur = "UAH";
+    }
+    $price_tmp = $res->price;
+    $res->price = $cur.$price_tmp;
+    $json = json_encode($res);
+    echo $json;
 }
 
 
@@ -150,5 +174,5 @@ $file=fopen("cars.xml","r");
 
 xml_parser_free($parser);
 */
-include('template/footer.php');
+
 ?>

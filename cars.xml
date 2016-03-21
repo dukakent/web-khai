@@ -2,23 +2,38 @@
 <!DOCTYPE list [
 <!ELEMENT list (product+)>
 <!ELEMENT product (brand,model,year,price,serial,imgurl)>
+<!ATTLIST product id ID #REQUIRED>
+<!ATTLIST product available (true|false) #REQUIRED>
+<!ATTLIST product case IDREF #REQUIRED>
 <!ELEMENT brand (#PCDATA)>
 <!ELEMENT model (#PCDATA)>
 <!ELEMENT year (#PCDATA)>
 <!ELEMENT price (#PCDATA)>
+<!ATTLIST price cur (dollar|euro|uah|pln) #REQUIRED>
 <!ELEMENT serial (#PCDATA)>
 <!ELEMENT imgurl (#PCDATA)>
 ]>
 <list>
-<product id="1" available="true">
+<cartype id="sedan">
+    <back>small</back>
+    <sits>4</sits>
+</cartype>
+<cartype id="hatchback">
+    <back>big</back>
+    <sits>8</sits>
+</cartype>
+<cartype id="sport">
+    <doors>2</doors>
+</cartype>
+<product id="1" available="true" case="sedan">
     <brand>BMW</brand>
-    <model>M Sport</model>
+    <model>M Sport ЛАДА</model>
     <year>2014</year>
     <price cur="dollar">74000</price>
     <serial>1234</serial>
     <imgurl>http://liveimages.carsales.com.au/carsales/car/dealer/204059663.jpg</imgurl>
 </product>
-<product id="2" available="true">
+<product id="2" available="true" case="hatchback">
     <brand>Volkswagen</brand>
     <model>Jetta</model>
     <year>2012</year>

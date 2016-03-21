@@ -1,4 +1,6 @@
+<div class="clear"></div>
 </div>
+
 <div class="news verdana-font">
     <img src="<?=$url;?>img/news_header.png" alt="news" class="news-header">
     <img src="<?=$url;?>img/garniture.jpg" alt="garniture" clss="garniture">
@@ -28,7 +30,12 @@
 <div class="footer verdana-font">
 &copy; Copyright 2002 WEBHOSTING Corporation. All Rights Reserved.
 </div>
+<script src="<?=$url;?>js/common/jquery.js"></script>
+<script src="<?=$url;?>js/common/droppy.js"></script>
+<script src="<?=$url;?>js/navDrop.js"></script>
 <script src="<?=$url;?>js/headerAnimation.js"></script>
 <!--<script src="./js/registration.js"></script>-->
+<script src="<?=$url;?>js/ajax.js"></script>
+<script src="<?=$url;?>js/carsMoreInfo.js"></script>
 </body>
 </html>

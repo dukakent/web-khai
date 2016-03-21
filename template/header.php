@@ -1,27 +1,9 @@
-<?php 
-    $url = 'http://localhost/web-khai/';
-
-    function post($name){
-        if(isset($_POST[$name])){
-            return $_POST[$name];
-        }
-        return '';
-    }
-
-    function get($name){
-        if(isset($_GET[$name])){
-            return $_GET[$name];
-        }
-        return '';
-    }
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>HOSTING.COM</title>
+    <link rel="stylesheet" href="<?=$url;?>css/droppy.css">
     <link rel="stylesheet" href="<?=$url;?>css/style.css">
     <link rel="stylesheet" href="<?=$url;?>css/style-registration.css">
     <link rel="stylesheet" href="<?=$url;?>css/style-fm.css">
@@ -42,18 +24,36 @@
             </div>
             <div class="header-right" style="right: -200px"></div>
         </div>
-
         <div class="border-both"></div>
         <div class="menu hooge-font">
-            <div class="menu-strip">
-                <div class="nav">navigation</div>
-                <div><img src="<?=$url;?>img/nav_decor.png" alt="decoration"></div>
+            <div class="menu-strip left">
+                <div class="nav-title left">navigation</div>
+                <div class="left"><img src="<?=$url;?>img/nav_decor.png" alt="decoration"></div>
+                <div class="clear"></div>
             </div>
-            <a href="#" class="menu-arrow"><img src="<?php echo $url ?>img/menu_arrow.png" alt="more categories"></a>
-            <a href="<?=$url;?>redirect.php" class="menu-button"><div>contact</div></a>
-            <a href="#" class="menu-button"><div>support</div></a>
-            <a href="#" class="menu-button"><div>services</div></a>
-            <a href="#" class="menu-button"><div>hosting</div></a>
+            <div class="right">
+                <ul class="nav-drop">
+
+                    <li>
+                        <a href="<?=$url;?>redirect.php" class="menu-button">contacts</a>
+                        <ul>
+                            <li><a href="#">Mobile number</a></li>
+                            <li><a href="#">Office number</a></li>
+                            <li><a href="#">Office address</a></li>
+                            <li><a href="#">Support email</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu-button">support</a></li>
+                    <li><a href="#" class="menu-button">services</a></li>
+                    <li><a href="#" class="menu-button">hosting</a></li>
+                    <li>
+                        <a href="#" class="menu-arrow"><img src="<?=$url;?>img/menu_arrow.png" alt="more categories"></a>
+                        
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="clear"></div>
         </div>
         <div class="border-vdots"></div>
     </div>
