@@ -39,15 +39,10 @@ function hideTooltip () {
     }
 }
 
+$(".info").on("click", ".btn-more", function () {
+    getMoreInfo(this);
+});
 
-var btns = document.getElementsByClassName("btn-more");
-
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-        getMoreInfo(this);
-    });
-}
-
-document.onclick = function () {
-    hideTooltip();
-};
+$(document).click(function () {
+    hideTooltip()
+});
